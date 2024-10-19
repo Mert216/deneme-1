@@ -18,14 +18,13 @@ ul {
 }
 
 .reviews-section {
-    background-color: #fbfbfb;
-    width: 1280px;
-    height:  701px;
-    padding-left: 100px;
-    padding-top: 100px;
-    gap: 50px;
-    opacity: 0px; 
-    
+  background-color: #fbfbfb;
+  width: 1280px;
+  height: 701px;
+  padding-left: 100px;
+  padding-top: 100px;
+  gap: 50px;
+  opacity: 0px;
 }
 
 .container {
@@ -43,17 +42,16 @@ ul {
   font-family: Inter Tight;
   display: flex;
   flex-direction: column;
-
 }
 
 .review-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .title {
-  font-size: 64px ;
+  font-size: 64px;
   font-weight: 600;
   margin-bottom: 10px;
   line-height: 64px;
@@ -61,47 +59,43 @@ ul {
 }
 
 .title span {
-    font-family: Inter Tight;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 64px;
-    letter-spacing: -0.015em;
-    text-align: left;
-    color: #576F35;
-
+  font-family: Inter Tight;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: #576f35;
 }
 
 .description {
-    font-family: Inter Tight;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: left;
-    color: #141414;
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #141414;
 }
 
 .reviews {
   gap: 25px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .review {
-    width: 343px;
-    height: 258px;
-    padding: 20px 0px 0px 0px;
-    border-radius: 24px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    text-align: center;
-    border: 1px solid #7A31454D;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    
+  width: 343px;
+  height: 258px;
+  padding: 20px 0px 0px 0px;
+  border-radius: 24px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  text-align: center;
+  border: 1px solid #7a31454d;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .review img {
@@ -109,27 +103,95 @@ ul {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .review h3 {
-    font-family: Inter Tight;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 19.8px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #141414;
-
+  font-family: Inter Tight;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19.8px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #141414;
 }
 
 .review p {
-    font-family: Inter Tight;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22.4px;
-    text-align: center;
-    color: #141414;
-    opacity: 0.4;
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: center;
+  color: #141414;
+  opacity: 0.4;
+}
 
+@media (min-width: 375px) and (max-width: 768px) {
+  .reviews-section {
+    width: 768px;
+    height: 701px;
+    padding: 100px 32px;
+    gap: 10px;
+    opacity: 0px;
+  }
+  .review.tablet {
+    border: 0px;
+    display: none;
+  }
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  .reviews-section {
+    width: 375px;
+    height: 662px;
+    padding: 80px 20px 80px 20px;
+    gap: 40px;
+    opacity: 0px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -1.5%;
+  }
+
+  .title span {
+    font-family: Inter Tight;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: #576f35;
+  }
+
+  .review.mobile {
+    border: 0px;
+    display: none;
+  }
+
+  .review {
+    width: 335px;
+    height: 238px;
+    padding: 20px 16px;
+    border-radius: 24px;
+    opacity: 0px;
+    text-align: center;
+    border: 1px solid #7a31454d;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .reviews-block {
+    width: 335px;
+    height: 224px;
+    gap: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 18px;
+    weight: 500px;
+    color:#141414
+  }
 }
