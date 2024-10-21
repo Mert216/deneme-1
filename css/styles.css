@@ -17,7 +17,7 @@ ul {
   box-sizing: border-box;
 }
 
-.reviews-section {
+.reviews-container {
   background-color: #fbfbfb;
   width: 1280px;
   height: 701px;
@@ -25,13 +25,14 @@ ul {
   padding-top: 100px;
   gap: 50px;
   opacity: 0px;
-}
-
-.reviews-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.reviews-section {
+  background-color: #fbfbfb;
 }
 
 .reviews-block {
@@ -127,7 +128,7 @@ ul {
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
-  .reviews-section {
+  .reviews-container {
     width: 768px;
     height: 701px;
     padding: 100px 32px;
@@ -140,7 +141,7 @@ ul {
   }
 }
 @media (min-width: 0px) and (max-width: 375px) {
-  .reviews-section {
+  .reviews-container {
     width: 375px;
     height: 662px;
     padding: 80px 20px 80px 20px;
